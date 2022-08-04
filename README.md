@@ -1,6 +1,11 @@
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This project uses [Nest](https://github.com/nestjs/nest) TypeScript framework.
+
+## Prerequisites
+
+- [Node v18.2.0](https://nodejs.org/en/download) 
+- [Docker Compose](https://docs.docker.com/compose/install)
 
 ## Installation
 
@@ -10,6 +15,12 @@ $ npm install
 
 ## Running the app
 
+To run database
+```bash
+$ docker-compose -f docker-compose.yml up database
+```
+
+To run the webserver 
 ```bash
 # development
 $ npm run start
@@ -34,16 +45,6 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+## Request documentation
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Some example requests could be found this this [Postman documentation](https://documenter.getpostman.com/view/8585549/VUjLK6Lu)
